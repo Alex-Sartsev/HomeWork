@@ -5,11 +5,11 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.Write("Введите целое число: ");
+Console.Write("Введите число №1: ");
 int num1 = Convert.ToInt32(System.Console.ReadLine());
-Console.Write("Введите ещё одно целое число: ");
+Console.Write("Введите число №2: ");
 int num2 = Convert.ToInt32(System.Console.ReadLine());
 
-if (num1 < num2) Console.WriteLine($"Число: {num1}, является минимальным, а число: {num2}, является максимальным");
-else if (num1 > num2) Console.WriteLine($"Число: {num1}, является максимальным, а число {num2}, является минимальным");
+if (num1 > num2) Console.WriteLine($"max = {num1}, min = {num2}");
+else if (num2 > num1) Console.WriteLine($"max = {num2}, min = {num1}");
 else Console.WriteLine($"Числа: {num1} и {num2} равны");
